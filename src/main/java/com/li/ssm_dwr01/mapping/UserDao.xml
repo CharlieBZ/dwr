@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.li.ssm_dwr01.dao.UserDao" >
+	
+	<resultMap type="com.li.ssm_dwr01.entity.User" id="userMap">
+		<result column="user_id" jdbcType="VARCHAR" property="userId"/>
+		<result column="user_name" jdbcType="VARCHAR" property="userName"/>
+		<result column="user_pwd" jdbcType="VARCHAR" property="userPwd"/>
+	</resultMap>
+	
+	<!-- 登录 -->
+	<select id="selectUserLogin" resultMap="userMap">
+		select * from users where user_no=#{0} and user_pwd=#{1}
+	</select>
+	
+</mapper>

@@ -1,0 +1,12 @@
+#box{border:1px solid;width:700px;height:600px;margin:0 auto;}
+#friendList{width:150px;float:left;border:1px solid;height:100%;overflow:auto; }
+#friendList h2{background:#b4cde6;}
+.friend{padding:3px 10px;}
+.friend:hover{background:#ccc;cursor:pointer;}
+#sessionList{width:540px;height:440px;border:1px solid;float:right;overflow: auto;}
+#sessionListTitle{text-align:center;background:#969696;font-size:20px;color:#fff;}
+#sessionList span{word-break:break-all;padding:5px;display:inline-block;border-radius:3px;background:#78d1e4;margin:10px;max-width:470px;text-align: left; }
+.left{text-align:left;}
+.right{text-align:right;}
+#msgText{min-width:540px;min-height:100px;max-width:540px;max-height:100px;word-break:break-all;padding:5px;border:1px solid;float:right;margin:9px 0;border-radius:3px;}
+#sendBtn,#exitBtn,#sendAll{float:right;margin:0 10px;width:100px;}
